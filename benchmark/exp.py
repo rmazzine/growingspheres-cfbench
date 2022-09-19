@@ -85,7 +85,7 @@ for benchmark_data in benchmark_generator:
         # Evaluate CF
         evaluator(
             cf_out=cf,
-            algorithm_name='growingshpheres',
+            algorithm_name='growingspheres',
             cf_generation_time=cf_generation_time,
             save_results=True)
 
@@ -96,6 +96,6 @@ for benchmark_data in benchmark_generator:
         # If CF generation time exceeded the limit
         evaluator(
             cf_out=factual_row.to_list(),
-            algorithm_name='growingshpheres',
+            algorithm_name='growingspheres',
             cf_generation_time=np.NaN,
             save_results=True)
